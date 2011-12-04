@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/pquiza/Dropbox/bittorrentclient/docs'
+let g:netrw_dirhist_2='/Users/pquiza/.vim'
+let g:netrw_dirhist_3='/Users/pquiza/.vim/colors'
+let g:netrw_dirhist_4='/Users/pquiza'
+let g:netrw_dirhist_5='/Users/pquiza/dotfiles'
+let g:netrw_dirhist_6='/Users/pquiza'
+let g:netrw_dirhist_7='/'
+let g:netrw_dirhist_8='/Users/pquiza'
