@@ -1,0 +1,12 @@
+[user]
+    name = Phillip Quiza
+	email = pquiza@gmail.com
+[color]
+    ui = auto
+[alias]
+    ci = commit
+    co = checkout
+    st = status
+    br = branch
+[core]
+    whitespace = tab-in-indent
