@@ -1,27 +1,27 @@
-set t_Co=256		" 256 color terminal
-set number		" line numbers
-set tabstop=4		" number of columns tabs count for 
-set softtabstop=4	" # of columns vim uses when tab is hit in insert mode
-set shiftwidth=4	" number of columns indented with << and >>
-set expandtab		" use space characters instead of tab characters
-set backspace=2		" make backspce work like most other apps
-set pastetoggle=<F2>	" allows text to be pasted with original alignment
-set autoindent		" indents each line the same as the previous one
-"set cindent		" indents according to C indentation standard, should not be used with smartindent
-set smartindent		" automatically inserts one extra level of indentation
-set incsearch		" search as string is typed
-set ignorecase		" ignore case on search
-set shortmess=atI	" short messages and don't show intro
-"set showcmd		" shows normal mode key presses at bottom
-set confirm		" dialog asking to confirm things instead of error
-set wildmenu		" menu pops up for tab completion on commands 
-set ruler		" show current position at bottm
-set smartcase		" if searching with case, will do case-sensitive search
-set tags=tags;/		" set tags file to 'tags' and search for it from current directory to root one parent folder at a time
-filetype indent on	" enable loading indent file for specific files
-syntax on		" turn on syntax highlighting
-setglobal modeline	" turns on parsing of lines at the beginning and end of file that look like: 
-                    " //vim: set et sw=2 ts=2;
+set t_Co=256            " 256 color terminal
+set number              " line numbers
+set tabstop=4           " number of columns tabs count for 
+set softtabstop=4       " # of columns vim uses when tab is hit in insert mode
+set shiftwidth=4        " number of columns indented with << and >>
+set expandtab           " use space characters instead of tab characters
+set backspace=2         " make backspce work like most other apps
+set pastetoggle=<F2>    " allows text to be pasted with original alignment
+set autoindent          " indents each line the same as the previous one
+"set cindent            " indents according to C indentation standard, should not be used with smartindent
+set smartindent         " automatically inserts one extra level of indentation
+set incsearch           " search as string is typed
+set ignorecase          " ignore case on search
+set shortmess=atI       " short messages and don't show intro
+"set showcmd            " shows normal mode key presses at bottom
+set confirm             " dialog asking to confirm things instead of error
+set wildmenu            " menu pops up for tab completion on commands 
+set ruler               " show current position at bottm
+set smartcase           " if searching with case, will do case-sensitive search
+set tags=tags;/         " set tags file to 'tags' and search for it from current directory to root one parent folder at a time
+filetype indent on      " enable loading indent file for specific files
+syntax on               " turn on syntax highlighting
+setglobal modeline      " turns on parsing of lines at the beginning and end of file that look like: 
+                        " //vim: set et sw=2 ts=2;
 call pathogen#infect()  " turn on Pathogen?
 
 " colorsolors - {{
