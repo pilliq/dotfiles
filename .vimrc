@@ -19,10 +19,12 @@ set ruler               " show current position at bottm
 set smartcase           " if searching with case, will do case-sensitive search
 set tags=tags;/         " set tags file to 'tags' and search for it from current directory to root one parent folder at a time
 filetype indent on      " enable loading indent file for specific files
+filetype plugin on      " turn on plugins for different file types (for reading .vim/ftplugin/* files)
 syntax on               " turn on syntax highlighting
 setglobal modeline      " turns on parsing of lines at the beginning and end of file that look like: 
                         " //vim: set et sw=2 ts=2;
 call pathogen#infect()  " turn on Pathogen?
+set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim " activate golint
 
 " colorsolors - {{
 " Explanation of 256 colors and vim: http://www.frexx.de/xterm-256-notes/
@@ -79,7 +81,6 @@ cmap w!! w !sudo tee >/dev/null %
 " ctrl n - word completion
 " >i{ indent block in 
 " <i{ decrease indent
-" :Sex - really? but it's seriously useful
 " f F - find occurrence
 " t T - like f, except till one char before occurrence
 " , - next occurrence of f, t
