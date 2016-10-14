@@ -1,5 +1,8 @@
 SCRIPTS_HOME=~/scripts
 TERM=xterm-256color
+# Log all bash history - https://spin.atomicobject.com/2016/05/28/log-bash-history/
+export PROMPT_COMMAND='if [ "$(id -u)" -ne 0 ]; then echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history 1)" >> ~/.logs/bash-history-$(date "+%Y-%m-%d").log; fi'
+
 export EDITOR=vim
 #export HOMEBREW_GITHUB_API_TOKEN=
 export DEVPATH=$HOME/dev
@@ -44,6 +47,7 @@ alias calc='~/.scripts/calchw.sh'
 alias updatedb="sudo /usr/libexec/locate.updatedb"
 alias mongony='cd ~/Dropbox/hackNY/2012/mongo'
 alias hackny="cd ~/Dropbox/hackNY/$(date | awk '{print $6}')"
+alias places="vim ~/Dropbox/hackNY/2012/places"
 alias playground='cd ~/Dropbox/playground'
 alias 428='source ~/.scripts/428.sh'
 alias hadoop_env='source ~/.scripts/hadoop.sh'
@@ -55,6 +59,10 @@ alias balance='vim ~/Dropbox/finance/balance/balance.book'
 alias fitness='vim ~/Dropbox/fitness/notes'
 alias cr='python ~/dev/scratch/tools/upload.py -y --email phillip.quiza@10gen.com -s codereview.10gen.com -m'
 alias balance='python ~/Dropbox/finance/balance/balance/cli.py -b ~/Dropbox/finance/balance/balance.book $@'
+alias log='vim ~/Dropbox/hackny/2012/log'
+alias todo='vim ~/Dropbox/todo'
+alias plan='vim ~/Dropbox/plan'
+alias play='~/Dropbox/scripts/play/play.sh'
 #alias mongod_dev='/Users/pquiza/dev/mongo/build/darwin/normal/mongo/mongod --dbpath /data/db/ --kj
 #starting mysql: mysql.server start
 
