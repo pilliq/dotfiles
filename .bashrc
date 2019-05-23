@@ -7,7 +7,7 @@ export EDITOR=vim
 #export HOMEBREW_GITHUB_API_TOKEN=
 export DEVPATH=$HOME/dev
 export SOURCEPATH=$HOME/sources
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home
 export ANT_HOME=$SOURCEPATH/apache-ant-1.8.2
 export GOPATH=$DEVPATH/go
 export WORKON_HOME=~/.envs
@@ -16,6 +16,11 @@ export PATH=$PATH:/usr/local/opt/go/libexec/bin # for GOROOT
 export PATH=$PATH:$GOPATH/bin
 export PATH=$ANT_HOME/bin:$PATH
 export PATH=$SCRIPTS_HOME:$PATH
+export XDG_DATA_HOME=$HOME/Dropbox # this is only for buku!
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
 # __git_ps1 needs to be installed
 # this helped http://stackoverflow.com/questions/12870928/mac-bash-git-ps1-command-not-found
@@ -63,6 +68,7 @@ alias log='vim ~/Dropbox/hackny/2012/log'
 alias todo='vim ~/Dropbox/todo'
 alias plan='vim ~/Dropbox/plan'
 alias play='~/Dropbox/scripts/play/play.sh'
+alias vif='/mms/scripts/vif'
 #alias mongod_dev='/Users/pquiza/dev/mongo/build/darwin/normal/mongo/mongod --dbpath /data/db/ --kj
 #starting mysql: mysql.server start
 
