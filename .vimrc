@@ -25,6 +25,10 @@ setglobal modeline      " turns on parsing of lines at the beginning and end of 
                         " //vim: set et sw=2 ts=2;
 call pathogen#infect()  " turn on Pathogen?
 set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim " activate golint
+set runtimepath^=~/.vim/bundle/ctrlp.vim " activate ctrlp.vim http://ctrlpvim.github.io/ctrlp.vim/#installation
+let g:go_doc_keywordprg_enabled = 0 " disable vim-go documentation viewer with K (https://github.com/fatih/vim-go/blob/master/ftplugin/go.vim#L31)
+set lazyredraw          " make scrolling a little bit faster https://eduncan911.com/software/fix-slow-scrolling-in-vim-and-neovim.html
+set noscrollbind        " do not sync/bind scrolling inside split screens
 
 " colorsolors - {{
 " Explanation of 256 colors and vim: http://www.frexx.de/xterm-256-notes/
@@ -73,6 +77,11 @@ set directory=~/.vim/tmp
 
 cmap w!! w !sudo tee >/dev/null %
 
+" Filetype-specific settings
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType js setlocal shiftwidth=2 tabstop=2
+autocmd FileType javascript.jsx setlocal shiftwidth=2 tabstop=2
+
 " Tips - {{
 " H M L - high middle low of current screen
 " ^ - first non-blank character
@@ -87,3 +96,12 @@ cmap w!! w !sudo tee >/dev/null %
 " ; - previous occurrence of f, t
 " ctrl L - redraw screen
 " }}
+"
+" How to profile:
+" (https://stackoverflow.com/questions/12213597/how-to-see-which-plugins-are-making-vim-slow/12216578#12216578)
+" :profile start profile.log
+" :profile func *
+" :profile file *
+" " At this point do slow actions
+" :profile pause
+" :noautocmd qall!
