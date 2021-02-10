@@ -10,3 +10,6 @@
     br = branch
 [core]
     whitespace = tab-in-indent
+	attributesfile = /Users/pquiza/.gitattributes
+[url "git@github.com:"]
+	insteadOf = https://github.com/
