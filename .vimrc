@@ -12,7 +12,7 @@ set smartindent         " automatically inserts one extra level of indentation
 set incsearch           " search as string is typed
 set ignorecase          " ignore case on search
 set shortmess=atI       " short messages and don't show intro
-"set showcmd            " shows normal mode key presses at bottom
+set showcmd            " shows normal mode key presses at bottom
 set confirm             " dialog asking to confirm things instead of error
 set wildmenu            " menu pops up for tab completion on commands 
 set ruler               " show current position at bottm
