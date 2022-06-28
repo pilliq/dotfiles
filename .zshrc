@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 alias ls="ls -G"
+alias pg-start='pg_ctl -D /usr/local/var/postgres start'
+alias pg-stop='pg_ctl -D /usr/local/var/postgres stop'
 
 # nvm related setup
 export NVM_DIR="$HOME/.nvm"
